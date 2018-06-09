@@ -1,0 +1,135 @@
+{
+	"organization" :
+    [
+        {
+            "name" : "Контора ",
+            "since" : 2018,
+            "placement" : "Санкт-Петербург",
+            "description" : "Короткое описание конторы",
+            "director" :
+            {
+                "firstname" : "Александр",
+                "lastname" : "Дубков",
+                "ID" : "000000",
+                "middlename" : "Александрович",
+                "birthday" : "25.07.1997"
+            },
+            "employees" :
+            [
+                {
+                    "firstname" : "Иван",
+                    "lastname" : "Иванов",
+                    "ID" : "000001",
+                    "middlename" : "Иванович",
+                    "birthday" : "30.01.2000",
+                    "vacation" :
+                    {
+                        "opening" : "14.07",
+                        "closing" : "29.07",
+                        "type" : "За свой счет"
+                    }
+                }
+            ]
+        },
+        {
+            "name" : "Фирма ",
+            "since" : 2017,
+            "placement" : "Москва",
+            "description" : "фирма по разведению тушканчиков",
+            "director" :
+            {
+                "firstname" : "Герман",
+                "lastname" : "Пухомелин",
+                "ID" : "000002",
+                "middlename" : "Андреевич",
+                "birthday" : "05.11.1997"
+            },
+            "employees" :
+            [
+                {
+                    "firstname" : "Сергей",
+                    "lastname" : "Афанасьев",
+                    "ID" : "000003",
+                    "middlename" : "Сергеевич",
+                    "birthday" : "14.04.1997",
+                    "vacation" :
+                    {
+                        "opening" : "21.01",
+                        "closing" : "9.02",
+                        "type" : "Оплачиваемый"
+                    }
+                },
+                {
+                    "firstname" : "Ирина",
+                    "lastname" : "Богданова",
+                    "ID" : "000004",
+                    "middlename" : "Викторовна",
+                    "birthday" : "05.04.1997",
+                    "vacation" :
+                    {
+                        "opening" : "19.06",
+                        "closing" : "5.07",
+                        "type" : "Оплачиваемый"
+                    }
+                }
+            ]
+        },
+        {
+            "name" : "Организация ",
+            "since" : 2014,
+            "placement" : "Минеральные Воды",
+            "description" : "Строительная организация",
+            "director" :
+            {
+                "firstname" : "Александр",
+                "lastname" : "Безбородов",
+                "ID" : "000005",
+                "middlename" : "Сергеевич",
+                "birthday" : "10.12.1998"
+            },
+            "employees" :
+            [
+                {
+                    "firstname" : "Арам",
+                    "lastname" : "Хачатурян",
+                    "ID" : "000006",
+                    "middlename" : "Вазгенович",
+                    "birthday" : "30.01.2000",
+                    "vacation" :
+                    {
+                        "opening" : "1.09",
+                        "closing" : "12.09",
+                        "type" : "Оплачиваемый"
+                    }
+                },
+                {
+                    "firstname" : "Карен",
+                    "lastname" : "Миракаян",
+                    "ID" : "000007",
+                    "middlename" : "Николаевич",
+                    "birthday" : "31.04.2000",
+                    "vacation" :
+                    {
+                        "opening" : "1.09",
+                        "closing" : "12.09",
+                        "type" : "Оплачиваемый"
+                    }
+                },
+                {
+                    "firstname" : "Аганес",
+                    "lastname" : "Яхщибекян",
+                    "ID" : "000008",
+                    "middlename" : "Гарикович",
+                    "birthday" : "19.07.2001",
+                    "vacation" :
+                    {
+                        "opening" : "12.09",
+                        "closing" : "26.09",
+                        "type" : "Оплачиваемый"
+                    }
+                }
+            ]
+        }
+    ]
+}
+
