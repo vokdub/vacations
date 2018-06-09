@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+{% for item in organization %}
+    <h2>Организация:  </h2>
+    <h3>Название: <span>{{item.name}}</span></h3>
+    <h3>Дата основания: <span>{{item.since}}</span></h3>
+    <h3>Местонахождение: <span>{{item.placement}}</span></h3>
+    <h3>Описание: <span>{{item.description}}</span></h3>
+    <h3>Директор: </h3>
+        <div class="director">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;  <span>{{item.director.firstname}} {{item.director.middlename}} {{item.director.lastname}}</span></h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Дата рождения: <span>{{item.director.birthday}}</span></h3>
+        </div>
+
+    <h3>Список Сотрудников: </h3>
+        <div class="employees">
+            {% for employee in item.employees %}
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/person?{{employee.ID}}"><span>{{employee.firstname}} {{employee.middlename}} {{employee.lastname}}</span></a></h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/byWeeks">Отпускa:</a> Дата начала: <span>{{employee.vacation.opening}}&nbsp; &nbsp;Дата конца: <span>{{employee.vacation.closing}}</span></span></h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Тип отпуска: <span>{{employee.vacation.type}}</span></h3>
+            <hr>
+        {% endfor %}
+        </div>
+{% endfor %}
+</body>
+</html>

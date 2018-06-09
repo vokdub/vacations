@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>byWeeks</title>
+    <style>
+    span{
+        font-size:1.2em;
+    }
+    </style>
+</head>
+<body>
+{% for i in 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' %}
+    <span>{{forloop.counter}}</span>
+    {% for week in cont %}
+        {% if forloop.parentloop.counter == week.value %}
+            <a href="/person?{{week.ID}}"><span>{{week.firstname}} {{week.lastname}}</span></a>
+        {% endif %}
+    {%endfor%}
+<br>
+{%endfor%}
+</body>
+</html>
